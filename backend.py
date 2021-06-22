@@ -8,4 +8,4 @@ def home():
     return render_template('2048.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
