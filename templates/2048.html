@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 by Dima</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='2048.js') }}" defer></script>
+    <link href="{{ url_for('static', filename='2048.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="content">
+        <div class="header-container">
+            <h1 class="title">2048</h1>
+            <h4 class="subtitle">Tambahkan poin yang ada didalam kotak hingga 2048</h2>
+        </div>
+        <div class="game-container">
+            <div class="grid beside">
+
+            </div>
+            <div class="beside-container beside">
+                <div class="score">
+                    <h1 class="scoretitle beside">Score:</h1>
+                    <h1 class="scorevalue beside" id="score">0</h1>
+                </div>
+                <div class="buttons">
+                    <button class="newgame" id="newgame" onClick="window.location.reload()">
+                        New game!
+                    </button>
+                    <button class="github" id="github" onclick="location.href='https://www.google.com'">
+                        Github Repo
+                    </button>
+                </div>
+            </div>
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
