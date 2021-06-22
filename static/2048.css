@@ -2,6 +2,7 @@ body{
     background-color: #57407c;
     background-image: linear-gradient(rgba(87, 64, 124, 0.95), rgba(87, 64, 124, 0.95)), url(assets/oriental-tiles.png);
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    height: 800px;
 }
 
 .content{
